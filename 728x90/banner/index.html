@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <!--STANDARD CLICKTAG (clicktag variable is a placeholder "https://www.google.com" for example -->
+    <script language="javascript">
+        var clickTag = "https://www.google.com";
+    </script>
+
+</head>
+
+<body class="mrec">
+
+    <!--LOADER CIRCLE-->
+    <div class="loader">
+        <img src="loader.svg" alt="" />
+    </div>
+
+    <div class="container" style="display:none;">
+
+        <!--STANDARD CLICKTAG-->
+        <a href="javascript:window.open(window.clickTag)">
+            <div class="button"><span id="cta-text">Apply now</span></div>
+            <button id="background_exit_dc"></button>
+        </a>
+
+        <div class="grey-border"></div>
+
+        <div class="overlay">
+            <div class="overlay-close">
+                <img src="close.gif" alt="" />
+            </div>
+            <h6>Important information</h6>
+            <div class="overlay-body">
+                <span class="terms-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar nunc vitae rhoncus pellentesque. Sed non ullamcorper elit. Sed feugiat gravida odio a.</span>
+            </div>
+        </div>
+
+
+        <div class="banner">
+
+            <!-- ------- FRAME 01 ------- -->
+            <h1 class="copy" id="f1-copy">Looking for a credit card that can take you places?</h1>
+
+            <!-- ------- FRAME 02 ------- -->
+           <h1 class="copy" id="f2-copy"><span id="impact-copy01">22,000</span><br />Bonus Qantas points<br /></h1>
+           <h1 class="copy" id="f3-copy">with an <strong>ANZ Frequent</br> Flyer Black </strong>Credit Card.</h1>
+
+            <!-- ------- FRAME 03 ------- -->
+            <div id="card-wrapper">
+                <div class="card">
+                  <div class="card-face front"><img src="black-visa-front.png"/></div>
+                  <div class="card-face back"><img src="black-visa-back.png"/></div>
+                </div>
+                <div class="card-shadow"><img src="card-shadow.png"/></div>
+            </div>
+
+            <!-- ------- FRAME 04 ------- -->
+
+
+            <!-- USE THIS IF THERE IS A "CLICK FOR EXTENDED TERMS" BUTTON -->
+<!--
+            <div class="terms-wrapper">
+                    <span class="terms">*Prices are based on payment at qantas.com by BPAY. Offer ends XXX, Unless sold our prior. Selected travel dates, days and conditions apply. </span><span class="overlay-trigger">Click for important information.</span>
+            </div>
+-->
+
+            <!-- USE THIS IF THERE ARE NO "CLICK FOR EXTENDED TERMS" NEEDED -->
+
+            <div class="terms-wrapper">
+                    <span class="terms">*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar nunc vitae rhoncus pellentesque. Sed non ullamcorper elit. Sed feugiat gravida odio a.</span>
+            </div>
+
+
+            <!-- ------- BASE ELEMENTS --------->
+            <img id="ff-logo" src="logo-ff.svg" />
+            <img id="ff-logo-color" src="logo-ff-color.svg" />
+            <img id="anz-logo" src="anz-logo.svg" />
+            <img id="white-shape" src="white-shape.svg" />
+            <img id="white-shape-2" src="white-shape-2.svg" />
+
+            <div class="shapes">
+                <img id="blue-shape" src="shape-blue.svg" />
+                <img id="red-shape" src="shape-red.svg" />
+                <img id="mask-shape" src="shape-mask.svg" />
+            </div>
+
+
+
+            <img id="red-circle" src="red-circle.svg" alt="" />
+
+            <div id="bg-image-container">
+
+            </div>
+
+        </div>
+
+    </div>
+      <script src="banner.min.js"></script>
+</body>
+
+</html>

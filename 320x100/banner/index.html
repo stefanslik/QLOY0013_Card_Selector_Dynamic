@@ -1,0 +1,111 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <script src="//s0.2mdn.net/ads/studio/Enabler.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+    <script language="javascript">
+        // if (Enabler.isInitialized())
+        //     init();
+        // else
+        //     Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+        //
+        //
+        // function init() {
+        //     if (Enabler.isPageLoaded())
+        //         politeInit();
+        //     else
+        //         Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+        // }
+        var clickTag = "http://google.com";
+    </script>
+
+</head>
+
+<body class="mrec">
+
+    <!--LOADER CIRCLE-->
+    <div class="loader">
+        <img src="loader.svg" alt="" />
+    </div>
+
+    <div class="container" style="display:none;">
+
+        <!--STANDARD CLICKTAG-->
+        <a href="javascript:window.open(window.clickTag)">
+            <div class="button"><span id="cta-text">Book now</span></div>
+            <button id="background_exit_dc"></button>
+        </a>
+
+        <div class="grey-border"></div>
+
+        <div class="overlay">
+            <div class="overlay-close">
+                <img src="close.gif" alt="" />
+            </div>
+            <h6>Important information</h6>
+            <div class="overlay-body">
+                <span class="terms-txt"></span>
+            </div>
+        </div>
+
+
+        <div class="banner">
+
+            <!-- ------- FRAME 01 ------- -->
+            <div class="copy" id="f1-copy">
+                  <h1 class="copy f1-copy" id="f1-copy">Looking for a credit card <br />that can take you places?</h1>
+            </div>
+            <img id="red-shape-base" src="shape-red-base.svg" alt="">
+
+            <!-- ------- FRAME 02 ------- -->
+            <span id="impact-copy01"class="copy" >22,000</span><h1 class="copy" id="f2-copy"><br />Bonus Qantas points<br /></h1>
+            <h1 class="copy" id="f3-copy">with an <strong>ANZ Frequent</br> Flyer Black </strong>Credit Card.</h1>
+
+
+
+            <!-- ------- FRAME 03 ------- -->
+            <div id="card-wrapper">
+                     <div class="card">
+                       <div class="card-face front"><img src="black-visa-front.png"/></div>
+                       <div class="card-face back"><img src="black-visa-back.png"/></div>
+                     </div>
+                     <div class="card-shadow"><img src="card-shadow.png"/></div>
+                 </div>
+
+
+            <!-- USE THIS IF THERE IS A "CLICK FOR EXTENDED TERMS" BUTTON -->
+<!--            <div class="terms-wrapper">-->
+<!--                <span class="terms"></span><span class="overlay-trigger">Click for important information.</span>-->
+<!--            </div>-->
+            <div class="terms-wrapper">
+              *Card products referred to are not Qantas products and not offered or issued by Qantas but by the relevant Card partners that are the credit providers and credit licensees under the National Consumer Credit laws.
+
+            </div>
+            <!-- ------- BASE ELEMENTS -------- -->
+            <img id="ff-logo" src="logo-ff.svg" />
+            <img id="anz-logo" src="anz-logo.svg" />
+
+            <div class="shapes">
+                <img id="blue-shape" src="shape-blue.svg" />
+                <img id="red-shape" src="shape-red.svg" />
+                <img id="mask-shape" src="shape-mask.svg" />
+            </div>
+            <img id="white-shape" src="white-shape.svg" />
+
+
+            <div class="bg-image">
+                <img class="bg-image-01" src="" alt="" />
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <script src="data.js"></script> -->
+    <script src="banner.min.js"></script>
+</body>
+
+</html>
