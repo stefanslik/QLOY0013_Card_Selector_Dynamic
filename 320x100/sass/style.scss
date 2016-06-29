@@ -769,6 +769,7 @@ body.mrec .container {
     z-index: 9000;
     cursor: pointer;
     height: 100px;
+    -webkit-font-smoothing: antialiased;
 }
 
 #f3-copy h1 {

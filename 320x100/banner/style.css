@@ -491,19 +491,24 @@ td,
 th {
     padding: 0;
 }
-
 @font-face {
     font-family: "brauerneue-bold";
-    src: url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.eot");
-    src: url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.eot?#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.ttf") format("truetype"), url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.svg#lineto-brauerneue-bold") format("svg");
+    src:url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.eot");
+    src:url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.eot?#iefix") format("embedded-opentype"),
+        url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.woff") format("woff"),
+        url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.ttf") format("truetype"),
+        url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-bold.svg#lineto-brauerneue-bold") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "brauerneue-regular";
-    src: url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.eot");
-    src: url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.eot?#iefix") format("embedded-opentype"), url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.woff") format("woff"), url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.ttf") format("truetype"), url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.svg#lineto-brauerneue-regular") format("svg");
+    src:url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.eot");
+    src:url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.eot?#iefix") format("embedded-opentype"),
+        url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.woff") format("woff"),
+        url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.ttf") format("truetype"),
+        url("https://s3-ap-southeast-2.amazonaws.com/qantasfiles/lineto-brauerneue-regular.svg#lineto-brauerneue-regular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -519,7 +524,11 @@ body {
     font-family: 'brauerneue-regular', sans-serif;
     color: #fff;
 }
-
+.sub {
+  font-family: 'arial', sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
 h1,
 h2,
 h3,
@@ -531,8 +540,8 @@ h6 {
 }
 
 h1 {
-  font-size: 17px;
-  line-height: 19px;
+  font-size: 10px;
+  line-height: 9px;
 }
 
 h2 {
@@ -566,8 +575,11 @@ h4 {
 #impact-copy01,
 #impact-copy02 {
   font-family: brauerneue-regular;
-  font-size: 28px;
-
+    font-size: 36px;
+    left: 110px;
+    position: absolute;
+    z-index: 6000;
+    top: 9px;
 }
 #impact-copy02 {
     font-weight: 700;
@@ -599,23 +611,21 @@ body.mrec .container {
     left: 0px;
     margin: 0 auto;
     background-color: #ee0000;
-  //  clip: rect(0px, 320px, 100px, 0px);
+    clip: rect(0px, 320px, 100px, 0px);
 }
 
 #red-shape-base {
-    position: absolute;
-    width: 406px;
-    top: -67px;
-    left: -238px;
-    z-index: 200;
+  position: absolute;
+width: 406px;
+top: -42px;
+left: -188px;
+z-index: 200;
 }
 
 .logos {
     position: absolute;
     z-index: 5000;
-    right: 15px;
-    top: 61px;
-    width: 93px;
+
 }
 
 #blue-shape {
@@ -628,10 +638,18 @@ body.mrec .container {
 }
 #white-shape {
   position: absolute;
-bottom: -30px;
-left: -66px;
-z-index: 99999;
-width: 160px;
+      bottom: -11px;
+      left: -38px;
+      z-index: 5000;
+      width: 122px;
+}
+#white-shape-2 {
+  position: absolute;
+  bottom: -55px;
+  right: -305px;
+  z-index: 5000;
+  width: 396px;
+  height: 238px;
 }
 #red-shape {
     position: absolute;
@@ -727,13 +745,13 @@ width: 160px;
       width: 501px;
       height: 120px;
       z-index: 600;
+      font-family: 'brauerneue-regular';
+      font-weight: normal;
 }
 
 #f1-copy h1 {
   display: table-cell;
       vertical-align: middle;
-      font-family: 'brauerneue-regular';
-      font-weight: normal;
       font-size: 22px;
       line-height: 20px;
       text-align: left;
@@ -758,23 +776,21 @@ width: 160px;
 }
 #f2-copy {
   position: absolute;
-  display: table;
-  top: 6px;
-  left: 21px;
-  width: 141px;
-  height: 100px;
-  z-index: 4960;
-  margin-left: 11px;
+      display: table;
+      top: 49px;
+      right: 68px;
+      width: 141px;
+      height: 100px;
+      z-index: 4960;
+      margin-left: 11px;
+      font-family: 'brauerneue-regular';
+      font-weight: normal;
+          font-size: 12px;
 }
 
 #f2-copy h1 {
     display: table-cell;
     vertical-align: middle;
-    font-family: 'brauerneue-regular';
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: left;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -795,39 +811,21 @@ width: 160px;
 
 #f3-copy {
   position: absolute;
-display: table;
-top: 47px;
-left: 71px;
-z-index: 9000;
-cursor: pointer;
-height: 100px;
+      display: table;
+      font-family: 'brauerneue-regular';
+      font-weight: normal;
+      top: 17px;
+      left: 92px;
+      z-index: 9000;
+      cursor: pointer;
+      height: 100px;
+      font-size: 15px;
+      text-align: center;
+      line-height: 18px;
+      color:white;
+      -webkit-font-smoothing: antialiased;
 }
 
-#f3-copy h1 {
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'brauerneue-regular';
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 22px;
-    text-align: left;
-    -webkit-font-smoothing: antialiased;
-    width:180px;
-}
-
-#f3-1-copy {
-    position: absolute;
-    display: none;
-    top: 0px;
-    left: 0px;
-    width: 160px;
-    z-index: 4960;
-    text-align: center;
-    font-family: 'brauerneue-regular';
-    font-weight: normal;
-    font-size: 19px;
-    -webkit-font-smoothing: antialiased;
-}
 #anz-logo,
 #asterix-char,
 .banner,
@@ -841,40 +839,35 @@ height: 100px;
 
 #card-wrapper {
   position: absolute;
-z-index: 7100;
-right: 29px;
-top: 9px;
+  z-index: 7100;
+  right: 8px;
+  top: 21px;
 }
 #card-front {
     z-index: 7100;
 }
 .card-shadow {
-  right: -34px;
-bottom: -22px;
+  right: -20px;
+  bottom: -22px;
 }
 .back {
     position: absolute;
     top: 0;
 }
-#ff-logo-color {
-  width: 123px;
-  z-index: 8000;
-  top: 49px;
-  left: 11px;
-}
+
 #ff-logo {
-  width: 123px;
-  z-index: 8000;
-  top: -12px;
-  left: 11px;
+  width: 74px;
+      z-index: 6000;
+      top: 9px;
+      left: 6px;
 }
 
 #anz-logo {
-  width: 110px;
-height: 31px;
+  width: 99px;
+height: 18px;
 z-index: 7100;
-left: 3px;
-top: 8px;
+left: -17px;
+top: 32px;
 }
 #destination {
     position: relative;
@@ -964,23 +957,23 @@ top: 8px;
 }
 
 .button {
-    position: absolute;
+  position: absolute;
     display: block;
-    top: 15px;
-    right: 15px;
+    top: 62px;
+      right: 125px;
     background-color: #ffffff;
     color: #e0001b;
-    font-family: 'brauerneue-regular';
+    font-family: 'brauerneue-bold';
     font-weight: normal;
-    font-size: 17px;
-    line-height: 31px;
+    font-size: 13px;
+    line-height: 23px;
     letter-spacing: 0.1px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    height: 31px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 24px;
+    padding-left: 13px;
+    padding-right: 13px;
     cursor: pointer;
     z-index: 9999;
 }
@@ -991,18 +984,18 @@ top: 8px;
 }
 
 .terms-wrapper {
-    position: absolute;
-    width: 150px;
-    right: 15px;
-    bottom: 7px;
-    text-align: right;
-    font-size: 9px;
-    line-height: 9px;
-    font-family: Arial, sans-serif;
-    font-weight: 200;
-    color: #fcc4c4;
-    z-index: 9999;
-    pointer-events: none;
+  position: absolute;
+  width: 203px;
+  right: 36px;
+  bottom: 26px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 9px;
+  font-family: Arial, sans-serif;
+  font-weight: 200;
+  color: #fcc4c4;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 .overlay-trigger {
