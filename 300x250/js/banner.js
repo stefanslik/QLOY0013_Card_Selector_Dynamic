@@ -11,18 +11,15 @@ var tl;
 var preload;
 
 $(document).ready(function () {
-
     //Bring in listeners i.e. if a user clicks or rollovers
     addListeners();
 
-    preloadimages(["base-image-01.jpg","red-circle.svg","red-shape.svg"]).done(function (images) {
+    preloadimages(["shape-blue.svg","red-circle.svg","shape-red.svg","ANZ-logo.svg","logo-ff.svg","black-visa-front.png","black-visa-back.png"]).done(function (images) {
         console.log("loaded");
 
         initCSS();
         startAnimation();
     })
-
-    console.log('hello');
 });
 
 

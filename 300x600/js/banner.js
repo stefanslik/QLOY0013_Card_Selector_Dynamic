@@ -15,7 +15,7 @@ $(document).ready(function () {
     //Bring in listeners i.e. if a user clicks or rollovers
     addListeners();
 
-    preloadimages(["base-image-01.jpg","red-circle.svg","red-shape.svg"]).done(function (images) {
+    preloadimages(["base-image-01.jpg","red-circle.svg","shape-red.svg","shape-blue.svg","shape-mask.svg","logo-ff.svg","red-shape-3.svg","anz-logo.png"]).done(function (images) {
         console.log("loaded");
 
         initCSS();
@@ -30,7 +30,6 @@ $(document).ready(function () {
 addListeners = function () {
     //	bgExit.addEventListener('click', bgExitHandler, false);
 }
-
 
 
 function initCSS() {
@@ -97,7 +96,7 @@ function startAnimation() {
     tl.from("#anz-logo", 1, {autoAlpha:0, y:10, ease: Sine.easeOut}, "5.8")
     tl.from(".terms", 1, {alpha:0, ease: Sine.easeOut}, "5.8")
     tl.from(".button", 1, {autoAlpha:0, y:-15, ease: Sine.easeOut}, "5.8")
-    tl.to("#card-wrapper", 1.5, {alpha:1,ease: Sine.easeOut}, "5.8")
+    tl.to("#card-wrapper", .5, {alpha:1,ease: Sine.easeOut}, "5.8")
     tl.to(".card", 2, {rotationY:180, ease:Back.easeOut}, "8.8")
     tl.to("#white-shape", 1.5, {scaleX:1.5, scaleY:1.5, rotation: 60, x:10,y:-100,ease: Sine.easeInOut}, "8.8")
     tl.from("#f3-copy", 1.5, {autoAlpha:0, y:-15, ease: Sine.easeOut}, "5.7")

@@ -15,16 +15,14 @@ $(document).ready(function () {
     //Bring in listeners i.e. if a user clicks or rollovers
     addListeners();
 
-    preloadimages(["base-image-01.jpg","red-circle.svg","white-shape.svg", "blue-shape.svg"]).done(function (images) {
+    preloadimages(["base-image-01.jpg","red-circle.svg","white-shape.svg", "shape-blue.svg", "ANZ-logo.svg", "shape-red.svg"]).done(function (images) {
         console.log("loaded");
 
         initCSS();
         startAnimation();
     })
-
-    console.log('hello');
+    console.log('loaded');
 });
-
 
 //Add Event Listeners
 addListeners = function () {

@@ -6,7 +6,7 @@ var tl;
 
 $(document).ready(function () {
 
-    preloadimages(["base-image.jpg","logos.png","shape-mask.svg","shape-red.svg","shape-blue.svg","shape-red-end-frame.svg","shape-red-end-frame2.svg"]).done(function (images) {
+    preloadimages(["base-image.jpg","black-visa-back.png","black-visa-front.png","shape-mask.svg","shape-red.svg","shape-blue.svg","shape-red-end-frame.svg","shape-red-end-frame2.svg"]).done(function (images) {
         console.log("loaded");
 
         // ONCE IMAGES ARE PRE-LOADED BEGIN ANIMATION
